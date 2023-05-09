@@ -19,17 +19,13 @@ function getComputerChoice ()
 function rps (playerSelection, computerSelection)
 {
     playerSelection = playerSelection.toLowerCase(); //converts the users choice to lowercase
-    
-    if (playerSelection != 'rock' || playerSelection != 'paper' || playerSelection != 'scissors') //checks if the user input is correct
-    {
-        alert("Invalid Choice!");
-        return;
-    }
+
+    console.log("Player Choice: " + playerSelection);
+    console.log("Computer choice: " + computerSelection);
     
     if (playerSelection === computerSelection) //checks if both the selections are equivalent
     {
-        alert ("Draw!");
-        return;
+        return "Draw!";
     }
 
     if (playerSelection === 'rock')
@@ -38,7 +34,7 @@ function rps (playerSelection, computerSelection)
         {
             return "You Lose! Paper beats Rock";
         }
-        else //computerSelection must be scissors
+        else if (computerSelection === 'scissors')
         {
             return "You Win! Rock beats Scissors";
         }
@@ -49,7 +45,7 @@ function rps (playerSelection, computerSelection)
         {
             return "You Win! Paper beats Rock";
         }
-        else //computerSelection must be scissors
+        else if (computerSelection === 'scissors')
         {
             return "You Lose! Scissors beat Paper";
         }
@@ -60,7 +56,7 @@ function rps (playerSelection, computerSelection)
         {
             return "You Win! Scissors beat Paper";
         }
-        else //computerSelection must be rock
+        else if (computerSelection === 'rock')
         {
             return "You Lose! Rock beats Scissors";
         }
@@ -69,7 +65,7 @@ function rps (playerSelection, computerSelection)
 
 function game ()
 {
-    for (let i = 0; i < 2; i++)
+    for (let i = 0; i < 5; i++)
     {
         let playerChoice = prompt("Enter Rock, Paper or Scissors");
         
