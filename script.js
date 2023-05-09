@@ -66,3 +66,19 @@ function rps (playerSelection, computerSelection)
         }
     }
 }
+
+function game ()
+{
+    for (let i = 0; i < 2; i++)
+    {
+        let playerChoice = prompt("Enter Rock, Paper or Scissors");
+        
+        let end = rps (playerChoice, getComputerChoice());
+
+        console.log(end);
+        
+        alert(end);
+    }
+}
+
+game(); //Starts the game
