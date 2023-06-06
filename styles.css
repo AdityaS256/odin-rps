@@ -3,3 +3,7 @@ html, body {
     padding: 0%;
     background-color: rgb(6, 5, 34);
 }
+
+body {
+    padding: 2.0833333333%;
+}
