@@ -11,6 +11,7 @@ header {
     align-items: center;
     font-family: 'Space Mono', monospace;
     font-size: 8px;
+    margin: 2.0833333333%;
 }
 
 header > a {
@@ -32,5 +33,6 @@ html, body {
 }
 
 body {
-    padding: 2.0833333333%;
+    height: 100%;
+    width: 100%;
 }
