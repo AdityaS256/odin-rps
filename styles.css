@@ -24,6 +24,47 @@ header > h1 {
     margin: 0%;
 }
 
+.main {
+    display: flex;
+    justify-content: space-between;
+    margin: 0% 3%;
+}
+
+#Player {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Space Mono', monospace;
+}
+
+#Computer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Space Mono', monospace;
+}
+
+.name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name > * {
+    margin: 0px 0.5em;
+    font-size: 22px;
+}
+
+#Player > .name > * {
+    color: rgb(16, 185, 129);
+}
+
+#Computer > .name > * {
+    color: rgb(217, 119, 6);
+}
+
 footer {
     display: flex;
     justify-content: center;
