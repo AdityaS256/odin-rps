@@ -65,6 +65,80 @@ header > h1 {
     color: rgb(217, 119, 6);
 }
 
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons > div > * {
+    margin: 0em 1.5em;
+    padding: 3em;
+    border-radius: 50%;
+    border-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+}
+
+.buttons > div > button {
+    cursor: pointer;
+}
+
+.buttons > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttons > div > p {
+    margin-top: 1.5em;
+    padding: 0%;
+}
+
+.rock > p {
+    color: rgb(217, 119, 6);
+}
+
+.paper > p {
+    color: rgb(16, 185, 129);
+}
+
+.scissors > p {
+    color: rgb(244, 63, 94);
+}
+
+#rock {
+    background-color: rgba(217, 119, 6, 0.25);
+    transition: 200ms ease-in-out;
+}
+
+#rock:hover {
+    background-color: rgba(217, 119, 6, 0.5);
+}
+
+#rock > svg {
+    aspect-ratio: 1 / 1;
+}
+
+#paper {
+    background-color: rgba(16, 185, 129, 0.25);
+    transition: 200ms ease-in-out;
+}
+
+#paper:hover {
+    background-color: rgba(16, 185, 129, 0.5);
+}
+
+#scissors {
+    background-color: rgba(244, 63, 94, 0.25);
+    transition: 200ms ease-in-out;
+}
+
+#scissors:hover {
+    background-color: rgba(244, 63, 94, 0.5);
+}
+
 footer {
     display: flex;
     justify-content: center;
