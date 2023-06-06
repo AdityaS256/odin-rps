@@ -1,3 +1,42 @@
+function game (playerChoice)
+{
+    let end = rps (playerChoice, getComputerChoice());
+
+    let usrpoints = document.querySelector('#usrptns');
+    let compoints = document.querySelector('#comptns');
+
+    if (end === true)
+    {
+        points = Number(usrpoints.textContent);
+        points++;
+        usrpoints.textContent = points
+
+        if (points === 5)
+        {
+            alert("You Win!");
+            usrpoints.textContent = 0;
+            compoints.textContent = 0;
+        }
+    }
+    else if (end === false)
+    {
+        points = Number(compoints.textContent);
+        points++;
+        compoints.textContent = points
+        
+        if (points === 5)
+        {
+            alert("You Lose!");
+            usrpoints.textContent = 0;
+            compoints.textContent = 0;
+        }
+    }
+
+    console.log(end);
+        
+    alert(end);
+}
+
 function getComputerChoice ()
 {
     let computerChoice = Math.floor(Math.random() * 3) //Returns a number between 0 to 2
@@ -18,8 +57,6 @@ function getComputerChoice ()
 
 function rps (playerSelection, computerSelection)
 {
-    playerSelection = playerSelection.toLowerCase(); //converts the users choice to lowercase
-
     console.log("Player Choice: " + playerSelection);
     console.log("Computer choice: " + computerSelection);
     
@@ -32,42 +69,33 @@ function rps (playerSelection, computerSelection)
     {
         if (computerSelection === 'paper')
         {
-            return "You Lose! Paper beats Rock";
+            return false;
         }
         else if (computerSelection === 'scissors')
         {
-            return "You Win! Rock beats Scissors";
+            return true;
         }
     }
     else if (playerSelection === 'paper')
     {
         if (computerSelection === 'rock')
         {
-            return "You Win! Paper beats Rock";
+            return true;
         }
         else if (computerSelection === 'scissors')
         {
-            return "You Lose! Scissors beat Paper";
+            return false;
         }
     }
     else //playerSelection must be Scissors
     {
         if (computerSelection === 'paper')
         {
-            return "You Win! Scissors beat Paper";
+            return true;
         }
         else if (computerSelection === 'rock')
         {
-            return "You Lose! Rock beats Scissors";
+            return false;
         }
     }
-}
-
-function game (playerChoice)
-{
-    let end = rps (playerChoice, getComputerChoice());
-
-    console.log(end);
-        
-    alert(end);
 }
