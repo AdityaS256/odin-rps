@@ -24,6 +24,21 @@ header > h1 {
     margin: 0%;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    margin: 0.4rem;
+}
+
+footer > p > a {
+    color: white;
+    transition: 225ms ease-in-out;
+}
+
+footer > p > a:hover {
+    color: rgb(129, 140, 248);
+}
+
 html, body {
     margin: 0%;
     padding: 0%;
