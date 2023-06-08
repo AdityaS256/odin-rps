@@ -65,6 +65,20 @@ header > h1 {
     color: rgb(217, 119, 6);
 }
 
+#game {
+    display: flex;
+    justify-content: space-between;
+}
+
+#divider {
+    width: 2px;
+    height: 25%;
+    border-radius: 1em;
+    position: fixed;
+    left: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
 .buttons {
     display: flex;
     justify-content: center;
