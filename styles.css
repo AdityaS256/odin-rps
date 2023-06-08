@@ -68,6 +68,28 @@ header > h1 {
 #game {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+#usrchoice {
+    position: fixed;
+    left: 35%;
+    transition: 500ms ease-in-out;
+    transform: scaleX(-1);
+}
+
+#comchoice {
+    position: fixed;
+    right: 35%;
+    transition: 500ms ease-in-out;
+}
+
+#usrchoice > svg {
+    aspect-ratio: 1 / 1;
+}
+
+#comchoice > svg {
+    aspect-ratio: 1 / 1;
 }
 
 #divider {
